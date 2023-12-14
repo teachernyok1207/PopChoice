@@ -40,6 +40,8 @@ export default function App(){
             setFaveMovie("");
             setMovieTime("");
             setUserEmotion("");
+            setResultTitle("");
+            setResultText("");
         }
         
         setMovie(currentState => !currentState)
