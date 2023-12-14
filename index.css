@@ -119,9 +119,16 @@ html, body {
 }
 
 /* Result */
+.result-preloading-div{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .result-preloading{
     border: 1px solid white;
-    width: 50vw;
+    width: 10vw;
 }
 
 .result-title{

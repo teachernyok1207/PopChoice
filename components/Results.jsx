@@ -7,7 +7,9 @@ export default function Results({ isWaiting, resultTitle, resultText }){
     
     return(
         <div className="popchoice-result" id="popchoice-result">
-            <img className={isWaiting ? `result-preloading show` : `result-preloading hide`} id="result-preloading" src="assets/preloading.gif"/>
+            <div className="result-preloading-div">
+                <img className={isWaiting ? `result-preloading show` : `result-preloading hide`} id="result-preloading" src="assets/preloading.gif"/>
+            </div>
             <p className="result-title" id="result-title">{resultTitle}</p>
             <p className="result-text" id="result-text">{resultText}</p>
         </div>
