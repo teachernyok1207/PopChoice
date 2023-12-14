@@ -11,7 +11,7 @@ export default function Main({ isStart, getResponse, handleFaveMovieChange, hand
                 <h1 className="popchoice-title">PopChoice</h1>
             </div>
             { isStart ? <Questions handleFaveMovieChange={handleFaveMovieChange} handleMovieTime={handleMovieTime} handleUserEmotion={handleUserEmotion} /> : <Results isWaiting={isWaiting} resultTitle={resultTitle} resultText={resultText} />}
-            <input type="submit" className={ isWaiting ? "popchoice-button hide" : "popchoice-button show" } value={ isStart ? "Let's Go" : "Go Again"} onClick={ getResponse } disabled={ disableSubmit }/>
+            <input type="submit" className={ isWaiting && !isStart ? "popchoice-button hide" : "popchoice-button show" } value={ isStart ? "Let's Go" : "Go Again"} onClick={ getResponse } disabled={ disableSubmit }/>
         </div>
     )
 }
